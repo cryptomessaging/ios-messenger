@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KidDetailViewController" customModule="Messenger" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteAccountButton" destination="Ogs-jS-ug2" id="b75-cp-32c"/>
+                <outlet property="reviewAccountButton" destination="Be3-ha-IjY" id="RGx-WL-qOZ"/>
+                <outlet property="toggleChildAccessButton" destination="3QW-rV-fng" id="iDr-Xv-c60"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qPh-DP-ZoH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEG-Jq-TBl">
+                    <rect key="frame" x="8" y="8" width="304" height="142.5"/>
+                    <string key="text">To review your childs chats and have the ability to delete any offensive material, tap the Review Account button.  This will log you in as your child.  You will not be able to create any new messages or chats, only to review or delete.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-ha-IjY">
+                    <rect key="frame" x="105" y="349" width="110" height="30"/>
+                    <state key="normal" title="Review Account"/>
+                    <connections>
+                        <action selector="reviewAccountAction:" destination="-1" eventType="touchUpInside" id="KVl-M6-JNk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-rV-fng">
+                    <rect key="frame" x="8" y="530" width="108" height="30"/>
+                    <state key="normal" title="Toggle Account"/>
+                    <connections>
+                        <action selector="toggleChildAccessAction:" destination="-1" eventType="touchUpInside" id="oey-aI-VgJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogs-jS-ug2">
+                    <rect key="frame" x="216" y="530" width="96" height="30"/>
+                    <state key="normal" title="Wipe Account"/>
+                    <connections>
+                        <action selector="deleteAccountAction:" destination="-1" eventType="touchUpInside" id="M7l-w3-oQk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="UEG-Jq-TBl" secondAttribute="trailing" id="69A-iF-0BF"/>
+                <constraint firstAttribute="bottom" secondItem="Be3-ha-IjY" secondAttribute="bottom" multiplier="3:2" id="8cp-ey-7T0"/>
+                <constraint firstItem="3QW-rV-fng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="HRv-JZ-xg7"/>
+                <constraint firstItem="Ogs-jS-ug2" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="Q0A-Jq-q1G"/>
+                <constraint firstItem="UEG-Jq-TBl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="RKf-jK-5dC"/>
+                <constraint firstItem="Ogs-jS-ug2" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="X5f-Oi-yd5"/>
+                <constraint firstItem="3QW-rV-fng" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="YpD-iJ-f5r"/>
+                <constraint firstItem="Be3-ha-IjY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c1Q-bG-F7C"/>
+                <constraint firstAttribute="trailingMargin" secondItem="UEG-Jq-TBl" secondAttribute="trailing" id="cen-gy-ggT"/>
+                <constraint firstItem="UEG-Jq-TBl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="fgW-zN-Yb2"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

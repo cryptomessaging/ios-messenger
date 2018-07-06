@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="Messenger" customModuleProvider="target">
+            <connections>
+                <outlet property="authorizeButton" destination="d0F-z6-N8D" id="BuV-4h-Kjl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3Fn-xd-GpB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-dA-IU7" userLabel="Blue background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                    <color key="backgroundColor" red="0.26891650080000001" green="0.58094516460000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0F-z6-N8D">
+                    <rect key="frame" x="104.5" y="20" width="166" height="22"/>
+                    <color key="backgroundColor" red="0.39993172189999998" green="0.63425143380000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                    <state key="normal" title="Authorize my child">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="authorizeAction:" destination="-1" eventType="touchUpInside" id="HOJ-D5-fYU"/>
+                        <action selector="directNoticeButtonAction:" destination="-1" eventType="touchUpInside" id="RQw-hY-xQs"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover Family" translatesAutoresizingMaskIntoConstraints="NO" id="pur-BV-K4i">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Mq7-Ba-Zjt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One user profile does not fit all situations.  Break free with Mobido: Freedom to be yourself in the moment!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSd-ZW-tFF">
+                    <rect key="frame" x="24" y="152" width="327" height="115"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="0.41146707214765099" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5S-AK-Eib">
+                    <rect key="frame" x="16" y="413" width="343" height="72"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                    <color key="textColor" red="0.26891650080454765" green="0.58094516463428292" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-aI-smf">
+                    <rect key="frame" x="220" y="22" width="139" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="I'm New Here"/>
+                    <connections>
+                        <action selector="imNewButtonAction:" destination="-1" eventType="touchUpInside" id="oVQ-xZ-0s4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrH-7t-RMO">
+                    <rect key="frame" x="16" y="22" width="58" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="wpg-SZ-hOb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CzD-aI-smf" firstAttribute="top" secondItem="N9d-dA-IU7" secondAttribute="bottom" constant="-30" id="48S-v0-eoG"/>
+                <constraint firstItem="N9d-dA-IU7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4i2-Ee-eI9"/>
+                <constraint firstAttribute="bottom" secondItem="pur-BV-K4i" secondAttribute="bottom" id="4tp-gf-aqU"/>
+                <constraint firstAttribute="trailing" secondItem="N9d-dA-IU7" secondAttribute="trailing" id="5ZW-xT-tkN"/>
+                <constraint firstItem="CzD-aI-smf" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="7xt-td-4Lo"/>
+                <constraint firstAttribute="bottom" secondItem="xSd-ZW-tFF" secondAttribute="bottom" multiplier="5:2" id="Gya-ip-0Yw"/>
+                <constraint firstItem="d0F-z6-N8D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Hwo-WP-2as"/>
+                <constraint firstItem="N9d-dA-IU7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JOa-hT-bH2"/>
+                <constraint firstAttribute="trailingMargin" secondItem="xSd-ZW-tFF" secondAttribute="trailing" constant="8" id="X1s-si-Ubg"/>
+                <constraint firstAttribute="bottom" secondItem="j5S-AK-Eib" secondAttribute="bottom" multiplier="11:8" id="XiJ-KK-3jf"/>
+                <constraint firstItem="xSd-ZW-tFF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="8" id="Zx0-lR-uDI"/>
+                <constraint firstItem="TrH-7t-RMO" firstAttribute="top" secondItem="N9d-dA-IU7" secondAttribute="bottom" constant="-30" id="aK5-A2-99p"/>
+                <constraint firstItem="N9d-dA-IU7" firstAttribute="bottom" secondItem="d0F-z6-N8D" secondAttribute="bottom" constant="10" id="aRU-MV-Ne4"/>
+                <constraint firstAttribute="trailing" secondItem="pur-BV-K4i" secondAttribute="trailing" id="b0E-s4-ZPI"/>
+                <constraint firstItem="d0F-z6-N8D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dgn-zm-gF1"/>
+                <constraint firstItem="pur-BV-K4i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fPW-ro-Dug"/>
+                <constraint firstItem="TrH-7t-RMO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="gF2-rb-XmS"/>
+                <constraint firstItem="j5S-AK-Eib" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="iad-gL-9Tf"/>
+                <constraint firstAttribute="trailingMargin" secondItem="j5S-AK-Eib" secondAttribute="trailing" id="jTk-dG-vee"/>
+            </constraints>
+            <point key="canvasLocation" x="-15.5" y="86.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cover Family" width="500" height="299"/>
+    </resources>
+</document>

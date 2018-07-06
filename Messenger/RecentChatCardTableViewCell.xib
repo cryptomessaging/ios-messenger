@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="2cB-eM-TP3" customClass="RecentChatCardTableViewCell" customModule="Messenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2cB-eM-TP3" id="4gc-bl-rPc">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="40D-Vh-HCu">
+                        <rect key="frame" x="56" y="8" width="375" height="41.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wA-qp-8CL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-I2-Xbd">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-q1-o2h" customClass="ReusableImageView" customModule="Messenger" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="HW9-fe-L47"/>
+                            <constraint firstAttribute="width" constant="40" id="gCa-le-ya0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="40D-Vh-HCu" firstAttribute="top" secondItem="4gc-bl-rPc" secondAttribute="top" constant="8" id="9Ri-pq-pfk"/>
+                    <constraint firstItem="40D-Vh-HCu" firstAttribute="leading" secondItem="Dgm-q1-o2h" secondAttribute="trailing" constant="8" id="ADi-rl-4Mr"/>
+                    <constraint firstItem="Dgm-q1-o2h" firstAttribute="top" secondItem="4gc-bl-rPc" secondAttribute="top" constant="8" id="B8D-8Y-hrf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="40D-Vh-HCu" secondAttribute="trailing" id="Ons-3C-mRs"/>
+                    <constraint firstItem="Dgm-q1-o2h" firstAttribute="leading" secondItem="4gc-bl-rPc" secondAttribute="leading" constant="8" id="b2L-IM-h5e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardImage" destination="Dgm-q1-o2h" id="Ue6-Jl-aZc"/>
+                <outlet property="nicknameLabel" destination="0wA-qp-8CL" id="hiQ-u8-iYV"/>
+                <outlet property="taglineLabel" destination="Go7-I2-Xbd" id="sts-Nf-BHi"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="86"/>
+        </tableViewCell>
+    </objects>
+</document>

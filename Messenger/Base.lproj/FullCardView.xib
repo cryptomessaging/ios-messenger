@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullCardViewController" customModule="Messenger" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ilw-80-fk1" customClass="FullCardView" customModule="Messenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vok-xY-XJX">
+                    <rect key="frame" x="8" y="8" width="304" height="273"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="urb-XP-MYx">
+                            <rect key="frame" x="8" y="8" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="urb-XP-MYx" secondAttribute="height" multiplier="1:1" id="6cU-vd-uxs"/>
+                                <constraint firstAttribute="height" constant="100" id="wVm-ZX-Tta"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8A-Zq-4Tz">
+                            <rect key="frame" x="116" y="8" width="180" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV6-wV-sPZ">
+                            <rect key="frame" x="116" y="37" width="180" height="21"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-3z-XCQ">
+                            <rect key="frame" x="8" y="116" width="288" height="150"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" placeholder="YES" id="wMh-AU-uYi"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="H8A-Zq-4Tz" firstAttribute="leading" secondItem="urb-XP-MYx" secondAttribute="trailing" constant="8" id="JnF-y1-XNu"/>
+                        <constraint firstItem="AV6-wV-sPZ" firstAttribute="top" secondItem="H8A-Zq-4Tz" secondAttribute="bottom" constant="8" id="SRd-Zk-954"/>
+                        <constraint firstItem="H8A-Zq-4Tz" firstAttribute="top" secondItem="Vok-xY-XJX" secondAttribute="top" constant="8" id="Sha-Qp-KxZ"/>
+                        <constraint firstItem="xiP-3z-XCQ" firstAttribute="top" secondItem="urb-XP-MYx" secondAttribute="bottom" constant="8" id="TwO-pf-dTP"/>
+                        <constraint firstAttribute="trailing" secondItem="H8A-Zq-4Tz" secondAttribute="trailing" constant="8" id="Ubn-Jk-uDU"/>
+                        <constraint firstAttribute="bottom" secondItem="xiP-3z-XCQ" secondAttribute="bottom" constant="7" id="VQ1-VX-0Tw"/>
+                        <constraint firstItem="AV6-wV-sPZ" firstAttribute="leading" secondItem="urb-XP-MYx" secondAttribute="trailing" constant="8" id="Zhk-Kq-qCv"/>
+                        <constraint firstItem="urb-XP-MYx" firstAttribute="top" secondItem="Vok-xY-XJX" secondAttribute="top" constant="8" id="aDg-Ac-ODJ"/>
+                        <constraint firstAttribute="trailing" secondItem="xiP-3z-XCQ" secondAttribute="trailing" constant="8" id="b5d-Qj-WvX"/>
+                        <constraint firstAttribute="trailing" secondItem="AV6-wV-sPZ" secondAttribute="trailing" constant="8" id="iU5-hc-0kr"/>
+                        <constraint firstItem="urb-XP-MYx" firstAttribute="leading" secondItem="Vok-xY-XJX" secondAttribute="leading" constant="8" id="srI-GJ-oYO"/>
+                        <constraint firstItem="xiP-3z-XCQ" firstAttribute="leading" secondItem="Vok-xY-XJX" secondAttribute="leading" constant="8" id="xfN-qf-Vp8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vok-xY-XJX" firstAttribute="leading" secondItem="Ilw-80-fk1" secondAttribute="leading" constant="8" id="3HT-9d-rp1"/>
+                <constraint firstAttribute="trailing" secondItem="Vok-xY-XJX" secondAttribute="trailing" constant="8" id="Ve7-m7-3DB"/>
+                <constraint firstItem="Vok-xY-XJX" firstAttribute="top" secondItem="Ilw-80-fk1" secondAttribute="top" constant="8" id="X3t-EV-ZV6"/>
+            </constraints>
+            <connections>
+                <outlet property="cardCanvas" destination="Vok-xY-XJX" id="a1B-bU-6K3"/>
+                <outlet property="coverImageView" destination="urb-XP-MYx" id="70e-6V-pqu"/>
+                <outlet property="nicknameLabel" destination="H8A-Zq-4Tz" id="06F-Wx-MzH"/>
+                <outlet property="reputationTable" destination="xiP-3z-XCQ" id="4FV-Ev-o5K"/>
+                <outlet property="taglineLabel" destination="AV6-wV-sPZ" id="mkv-VL-9Gs"/>
+            </connections>
+            <point key="canvasLocation" x="378" y="341"/>
+        </view>
+    </objects>
+</document>

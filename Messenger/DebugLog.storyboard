@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Debug Log-->
+        <scene sceneID="vPo-at-u0X">
+            <objects>
+                <viewController storyboardIdentifier="DebugLogViewController" id="Aqg-4q-o5e" customClass="DebugLogViewController" customModule="Messenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QPm-QY-aFq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xqv-bG-9bv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDT-hu-x97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ism-7X-3K7">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ism-7X-3K7" secondAttribute="trailing" id="QXi-j7-inK"/>
+                            <constraint firstItem="ism-7X-3K7" firstAttribute="leading" secondItem="XDT-hu-x97" secondAttribute="leadingMargin" id="YJo-sv-Dwa"/>
+                            <constraint firstItem="ism-7X-3K7" firstAttribute="top" secondItem="XDT-hu-x97" secondAttribute="topMargin" id="b8a-8a-ATe"/>
+                            <constraint firstItem="Xqv-bG-9bv" firstAttribute="top" secondItem="ism-7X-3K7" secondAttribute="bottom" id="yZD-l5-V7M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Debug Log" id="Dhc-CJ-MJB">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="56f-H2-A0I"/>
+                        <barButtonItem key="rightBarButtonItem" image="More Vertical" id="SVI-5y-fft" userLabel="More">
+                            <connections>
+                                <action selector="moreAction:" destination="Aqg-4q-o5e" id="7MN-82-LwB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webview" destination="ism-7X-3K7" id="Luw-5g-1Sj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLq-B4-LiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="506"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="More Vertical" width="25" height="25"/>
+    </resources>
+</document>

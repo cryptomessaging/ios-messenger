@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: -apple-system, Helvetica Neue;
+                font-size: 17px;
+                margin: 0px;
+            }
+        
+            p { margin: 20px 16px 0px 16px; }
+            h1 {
+                text-align: center;
+                color: white;
+                background-color: #3eb4dc;
+                padding: 20px 0px 20px 0px;
+            }
+            table {
+                margin-top: 20px;
+            }
+            table tr td:first-child {
+                text-align: right;
+                font-weight: bold;
+                width: 100px;
+                vertical-align: center;
+                padding-right: 10px
+            }
+            .sig {
+                border: 1px solid #3eb4dc;
+                border-bottom: 2px solid black;
+                width: 300px;
+                background-color: #d4e3e8;
+            }
+            .date {
+                border-bottom: 2px solid black;
+            }
+            td {
+                height: 40px;
+            }
+            #promise {
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mobido Parent Consent Form</h1>
+        
+        <p>U.S. and other laws require a parent or guardian of a child to authorize the collection, use, and disclosure of personal information before the child can use all features of an online service or app.  Personal information is defined in the U.S. by the Children's Online Privacy Protection Act, and more information is available in the FTC's
+            <a href="https://www.ftc.gov/tips-advice/business-center/guidance/complying-coppa-frequently-asked-questions">COPPA FAQ</a>.
+        </p>
+        
+        <p id="promise">Mobido is dedicated to protecting your child's privacy and generally does not ask for personal information.</p>
+        
+        <p>Mobido supports the collection of information including text, images, audio, and location for the purpose of chat and productivity.  While Mobido discourages children from providing any personal information, your child can provide this information.  We recommend you discuss this with your child, and use Mobido's parental controls to review all your child's activity.</p>
+        
+        <p>Information collected from your child is used by Mobido to provide a chat experience, and by third-party bots to enhance the chat experience.  Enhancements may include simple messages, timely visual or audible cues, and interactions with third-party computer systems to accomplish more complex goals.</p>
+        
+        <p>Information collected from your child is shared with the people and third-party bots in Mobido chats.</p>
+        
+        <p>I authorize the collection, use, and disclosure of {{kidname}}'s personal information.</p>
+            
+        <table>
+            <tr>
+                <td>Signed:</td>
+                <td class="sig"></td>
+            </tr>
+            <tr>
+                <td>Dated:</td>
+                <td class="date">{{date}}</td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

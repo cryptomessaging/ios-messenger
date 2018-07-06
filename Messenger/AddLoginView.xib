@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddLoginViewController" customModule="Messenger" customModuleProvider="target">
+            <connections>
+                <outlet property="loginField" destination="qVD-RL-Xav" id="h5o-jj-uTZ"/>
+                <outlet property="view" destination="9LU-Sj-p5u" id="Rd0-YU-CSg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9LU-Sj-p5u">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address or a username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-It-fQ6">
+                    <rect key="frame" x="8" y="32" width="359" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="you@domain.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVD-RL-Xav">
+                    <rect key="frame" x="8" y="59" width="359" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="qVD-RL-Xav" secondAttribute="trailing" id="B83-nu-S1O"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Rys-It-fQ6" secondAttribute="trailing" id="V1C-VC-7cn"/>
+                <constraint firstItem="Rys-It-fQ6" firstAttribute="top" secondItem="9LU-Sj-p5u" secondAttribute="topMargin" constant="24" id="b5q-cw-aaa"/>
+                <constraint firstItem="qVD-RL-Xav" firstAttribute="leading" secondItem="9LU-Sj-p5u" secondAttribute="leadingMargin" id="eUP-cv-yuD"/>
+                <constraint firstItem="qVD-RL-Xav" firstAttribute="top" secondItem="Rys-It-fQ6" secondAttribute="bottom" constant="6" id="it2-NT-iTb"/>
+                <constraint firstItem="Rys-It-fQ6" firstAttribute="leading" secondItem="9LU-Sj-p5u" secondAttribute="leadingMargin" id="vQF-ZK-djL"/>
+            </constraints>
+            <point key="canvasLocation" x="-242" y="-12"/>
+        </view>
+    </objects>
+</document>

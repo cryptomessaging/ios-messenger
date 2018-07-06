@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThreadHistoryTableViewCell" rowHeight="69" id="j3A-kf-bN9" customClass="ThreadHistoryTableViewCell" customModule="Messenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j3A-kf-bN9" id="Gmj-au-pbJ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VmX-DT-Ajh">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="nb0-fH-PJE"/>
+                            <constraint firstAttribute="height" constant="60" id="ocD-I4-sGF"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QWO-Ic-0gb">
+                        <rect key="frame" x="76" y="8" width="291" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41p-CJ-poa">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-SQ-uzb">
+                                <rect key="frame" x="0.0" y="24.5" width="291" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last messge time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6e-x6-6MB">
+                                <rect key="frame" x="0.0" y="45.5" width="291" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VmX-DT-Ajh" firstAttribute="top" secondItem="Gmj-au-pbJ" secondAttribute="top" constant="8" id="Kqv-Pj-UmB"/>
+                    <constraint firstAttribute="trailing" secondItem="QWO-Ic-0gb" secondAttribute="trailing" constant="8" id="LOg-Y9-fad"/>
+                    <constraint firstItem="QWO-Ic-0gb" firstAttribute="top" secondItem="Gmj-au-pbJ" secondAttribute="top" constant="8" id="LWe-ko-sox"/>
+                    <constraint firstItem="QWO-Ic-0gb" firstAttribute="leading" secondItem="VmX-DT-Ajh" secondAttribute="trailing" constant="8" id="Myn-i1-ebN"/>
+                    <constraint firstItem="VmX-DT-Ajh" firstAttribute="leading" secondItem="Gmj-au-pbJ" secondAttribute="leading" constant="8" id="bCB-ZO-qan"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageField" destination="8tg-SQ-uzb" id="P3I-7I-rFi"/>
+                <outlet property="subjectField" destination="41p-CJ-poa" id="PRM-GJ-KUx"/>
+                <outlet property="threadImage" destination="VmX-DT-Ajh" id="WWb-qy-Beu"/>
+                <outlet property="timeField" destination="n6e-x6-6MB" id="9vy-xg-D5N"/>
+            </connections>
+            <point key="canvasLocation" x="-415" y="-45"/>
+        </tableViewCell>
+    </objects>
+</document>

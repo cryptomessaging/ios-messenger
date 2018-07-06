@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartConsentViewController" customModule="Messenger" customModuleProvider="target">
+            <connections>
+                <outlet property="emailFormButton" destination="h0W-e4-hh8" id="6GI-w2-2UP"/>
+                <outlet property="kidnameField" destination="kvR-A0-JKM" id="Yif-Pm-Jkm"/>
+                <outlet property="parentEmailField" destination="UxW-le-pys" id="kfR-H6-Qs2"/>
+                <outlet property="printFormButton" destination="SeQ-nK-UOf" id="4SR-70-0nP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dgd-oJ-ntd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your child's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-Ea-z2m">
+                    <rect key="frame" x="8" y="16" width="304" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="David" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvR-A0-JKM">
+                    <rect key="frame" x="8" y="40" width="304" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="myname@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UxW-le-pys">
+                    <rect key="frame" x="8" y="110" width="304" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oG-UE-VlL">
+                    <rect key="frame" x="8" y="156" width="304" height="81.5"/>
+                    <string key="text">Tap the print button below to use AirPrint to print a consent form.  Or, tapping email will send you the form to print from another computer.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-9Q-6cG">
+                    <rect key="frame" x="8" y="254" width="304" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeQ-nK-UOf">
+                            <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
+                            <state key="normal" title="Print Form"/>
+                            <connections>
+                                <action selector="printFormAction:" destination="-1" eventType="touchUpInside" id="azG-01-q9j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0W-e4-hh8">
+                            <rect key="frame" x="152" y="0.0" width="152" height="30"/>
+                            <state key="normal" title="Email Form"/>
+                            <connections>
+                                <action selector="emailFormAction:" destination="-1" eventType="touchUpInside" id="a0I-Vn-AP8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="SeQ-nK-UOf" firstAttribute="width" secondItem="h0W-e4-hh8" secondAttribute="width" id="HIg-JT-fc0"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5E-Pg-P90">
+                    <rect key="frame" x="8" y="86" width="304" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kvR-A0-JKM" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="1mV-oD-8EA"/>
+                <constraint firstAttribute="trailingMargin" secondItem="i5E-Pg-P90" secondAttribute="trailing" id="3nA-gE-Hr6"/>
+                <constraint firstItem="UxW-le-pys" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="7tG-xV-f8u"/>
+                <constraint firstItem="UxW-le-pys" firstAttribute="top" secondItem="i5E-Pg-P90" secondAttribute="bottom" constant="4" id="AVv-bt-ghU"/>
+                <constraint firstAttribute="trailingMargin" secondItem="a3x-Ea-z2m" secondAttribute="trailing" id="BtU-6F-Oia"/>
+                <constraint firstItem="Dqj-9Q-6cG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="DPG-vs-hnZ"/>
+                <constraint firstItem="i5E-Pg-P90" firstAttribute="top" secondItem="kvR-A0-JKM" secondAttribute="bottom" constant="16" id="FsQ-Ys-lJw"/>
+                <constraint firstItem="a3x-Ea-z2m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="K1i-Xs-uCg"/>
+                <constraint firstItem="UxW-le-pys" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="KeE-5r-Aqz"/>
+                <constraint firstItem="3oG-UE-VlL" firstAttribute="top" secondItem="UxW-le-pys" secondAttribute="bottom" constant="16" id="TOf-kf-btr"/>
+                <constraint firstAttribute="trailingMargin" secondItem="3oG-UE-VlL" secondAttribute="trailing" id="UOC-Cl-aFh"/>
+                <constraint firstItem="Dqj-9Q-6cG" firstAttribute="top" secondItem="3oG-UE-VlL" secondAttribute="bottom" constant="16" id="UZO-ru-DzE"/>
+                <constraint firstItem="kvR-A0-JKM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="bYj-kC-hNL"/>
+                <constraint firstItem="a3x-Ea-z2m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="8" id="fce-Ew-Anh"/>
+                <constraint firstItem="kvR-A0-JKM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="gyw-z8-dPE"/>
+                <constraint firstItem="i5E-Pg-P90" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="lX4-Y5-GB5"/>
+                <constraint firstItem="3oG-UE-VlL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="vSN-5U-cY6"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Dqj-9Q-6cG" secondAttribute="trailing" id="vkF-0e-9bo"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="78"/>
+        </view>
+    </objects>
+</document>

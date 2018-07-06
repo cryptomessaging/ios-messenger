@@ -1,0 +1,546 @@
+// General buttons
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Next" = "Next";
+"Back" = "Back";
+"Got it" = "Got it";
+"Skip (Button)" = "Skip";
+"Done (Button)" = "Done";
+
+// General errors
+
+"Requested option '%@' is not available (Error)" = "Requested option '%@' is not available";
+
+// AppDelegate
+
+"Please sign in or create an account (Title)" = "Please sign in or create an account";
+"You must be signed into Mobido before you can accept an RSVP" = "You must be signed into Mobido before you can accept an RSVP";
+
+// MainViewController
+
+"Mobido HomeBot (Tab)" = "Home";
+
+// WhichMeViewController
+
+"Create (Button)" = "Create";
+"Select a persona" = "Select a persona";
+"Select a persona or create a new one" = "Select a persona or create a new one";
+
+// ExclusiveChatHelper
+
+"Missing persona id (Error)" = "Missing persona id";
+
+// HomeBotViewController
+
+"Mobido Homepage (Title)" = "Mobido";
+
+"Problem Fetching Available Homepage Bots (Title)" = "Problem Fetching Available Bots";
+"No Homepage Bots Available (Title)" = "No Homepage Bots Available";
+"There are no bots available for the homepage (Error)" = "There are no bots available for the homepage";
+"Problem With Homepage Bot Listing (Title)" = "Problem With Homepage Bot Listing";
+"Bot listing missing identifier (Error)" = "Bot listing missing identifier";
+
+"Problem Fetching Homepage Bot (Title)" = "Problem Fetching Homepage Bot";
+"No matching persona found (Error)" = "No matching persona found";
+
+"Select a Homepage Bot (Title)" = "Select a Homepage Bot";
+"Loading homepage (Progress)" = "Loading homepage";
+
+"Problem Loading Bot (Title)" = "Problem Loading Bot";
+"No homepage provided (Error)" = "No homepage provided";
+"Homepage URL missing (Error)" = "Homepage URL missing";
+
+"Failed to resolve homepage url from %@ and %@ (Error)" = "Failed to resolve homepage url from %@ and %@";
+"Failed To Get Widget HTML (Title)" = "Failed To Get Widget HTML";
+
+"Who Do You Want To Post As? (Title)" = "Who Do You Want To Post As?";
+
+"Your persona must be selected first (Error)" = "Your persona must be selected first";
+"Failed to load your personas (Error)" = "Failed to load your personas";
+
+"About %@ (Title)" = "About %@";
+
+// LocationTracker
+
+"Geolocation Is Not Enabled (Title)" = "Geolocation Is Not Enabled";
+"For using geolocation you need to enable it in Settings" = "For using geolocation you need to enable it in Settings";
+"Open Settings (Button)" = "Open Settings";
+
+// Push notifications
+
+"Failed to register APN token with Mobido servers" = "Failed to register APN token with Mobido servers";
+"Failed to register APN token with Apple" = "Failed to register APN token with Apple";
+
+// CalendarService
+
+"Calendar Access" = "Calendar Access";
+"On the settings page, please give Mobido access to your calendar" = "On the settings page, please give Mobido access to your calendar";
+
+// DebugLogViewController
+
+"Mail Problem" = "Mail Problem";
+"Failed to start mail app on your device" = "Failed to start mail app on your device";
+"Refresh" = "Refresh";
+"Email to support" = "Email to support";
+"Clear" = "Clear";
+
+"Creating link (Progress)" = "Creating link";
+
+// AddToChatViewController
+
+"Add Into Chat (Title)" = "Add Into Chat";
+"Send Invitation (Button)" = "Send Invitation";
+"Popular Bots (Section)" = "A Popular Bot";
+"A Coach To Help Learn Mobido (Section)" = "A Coach To Help Learn Mobido";
+"People You Know Outside Mobido (Section)" = "Invite People From Outside Mobido";
+"People %@ Has Chatted With (Section)" = "%@ Chats With";
+"All People You Have Chatted With (Section)" = "Everyone You Chat With";
+"Max Contacts Reached (Title)" = "Max Contacts Reached";
+"You only add 10 people at a time" = "You only add 10 people at a time";
+
+// CardsModel
+
+"Failed To Fetch Homepage Bots (Title)" = "Failed To Fetch Homepage Bots";
+"Failed To Fetch Recommended Bots (Title)" = "Failed To Fetch Recommended Bots";
+"Failed To Fetch Popular Bots (Title)" = "Failed To Fetch Popular Bots";"Failed To Fetch Recommended Bots (Title)" = "Failed To Fetch Recommended Bots";
+"Failed To Fetch Available Coaches (Title)" = "Failed To Fetch Available Coaches";
+
+// RsvpHelper
+
+"Failed to load your cards" = "Failed to load your Personas";
+"Please create a card first" = "Please create a Persona first";
+"You need a card to represent you before you can join any chats" = "You need a Persona to represent you before you can join any chats";
+"Problem fetching RSVP information" = "Problem fetching RSVP information";
+"Failed to accept RSVP" = "Failed to accept RSVP";
+"RSVP maxed out" = "RSVP maxed out";
+"All the spots have been taken." = "All the spots have been taken.  Please ask for another invitation";
+"Too many attempts" = "Too many attempts";
+"We tried the server %d time with no success" = "We tried the server %d time with no success";
+
+// ChangePasswordViewController
+
+"Save Password (Button)" = "Save";
+"Change Password (Title)" = "Change Password";
+"Changing password" = "Changing password";
+"Problem changing password" = "Problem changing password";
+
+// MoreViewController
+
+"Syncing" = "Syncing";
+"Logout?" = "Logout?";
+"Settings (Title)" = "Settings";
+"Settings (Tab)" = "More";
+"Simple (Theme)" = "Simple";
+"Pro (Theme)" = "Pro";
+"%@ Theme (Selected)" = "%@ theme";
+"Select Theme (Title)" = "Select Theme";
+"Create new login" = "Create new login";
+
+"DO NOT autocorrect chat typing" = "DO NOT autocorrect chat typing";
+"Autocorrect chat typing" = "Autocorrect chat typing";
+
+// MoreWebViewController
+
+"Failed to load HTML from %@" = "Failed to load HTML from %@";
+"Terms of Service (Title)" = "Terms of Service";
+
+// FullCardViewController
+
+"Card Detail" = "Persona Detail";
+"Remove from chat" = "Remove from chat";
+"Confirm removal" = "Confirm removal";
+"Removing Card" = "Removing Persona";
+"Problem removing card" = "Problem removing Persona";
+"Side chat w/%@" = "Side chat w/%@";
+"Creating Side Chat (Progress)" = "Creating Chat";
+
+// Advanced settings view controller
+
+"API Server" = "API Server";
+"Bot Proxy Pattern (Title)" = "Bot Proxy Pattern";
+"Bot Proxy Replacement (Title)" = "Bot Proxy Replacement";
+"Market Passcode (Title)" = "Market Passcode";
+"Set passcode" = "Set passcode";
+"Passcode is set" = "Passcode is set";
+
+// Mobido REST client/Bot REST client
+
+"No access key" = "No access key";
+"HTTP response is irregular" = "HTTP response is irregular";
+"URL is not well formed %@" = "URL is not well formed %@";
+"Failed to resolve URL from %@ and %@" = "Failed to resolve URL from %@ and %@";
+"Failed to parse JSON from %@ (Error)" = "Failed to parse JSON from %@";
+
+// TimeHelper
+
+"%d seconds ago" = "%d seconds ago";
+"%d minutes ago" = "%d minutes ago";
+
+// SyncHelper
+
+"Clearing caches" = "Clearing caches";
+"Failed to sync messages" = "Failed to sync messages";
+"Failed to sync chat cards" = "Failed to sync chat Personas";
+
+// ThreadHistoryModel
+
+"Failed to fetch chat history (Title)" = "Failed to fetch chat history";
+
+// JoinThreadViewController
+
+"Accept invitation from %@" = "Accept invitation from %@";
+"Select the card you would like to represent you when chatting about '%@'" = "Select the Persona you would like to represent you when chatting about '%@'";
+"Accepting" = "Accepting";
+
+// CreateThreadViewController
+
+"Loading your cards" = "Loading your Personas";
+"Problem fetching your cards" = "Problem fetching your Personas";
+"You have no cards!" = "You have no Personas!";
+"Please create a card" = "Please create a Persona";
+"Creating chat" = "Creating chat";
+"Problem creating chat" = "Problem creating chat";
+
+// ThreadHistoryViewController
+
+"Thread History (Tab)" = "Chats";
+"Thread History (Title)" = "Chat";
+"Problem fetching my cards from server (Title)" = "Problem fetching Personas from server";
+"Problem fetching your cards from server" = "Problem fetching your cards from server";
+"These Bots Want to Help" = "These Bots Want to Chat With You";
+"Recent" = "Recent Chats";
+"Click here to create first thread" = "Create your first chat.\n\nMobido makes it easy to get the conversation started.";
+"Failed to find chat" = "Failed to find chat";
+"The message referred to a chat you are not in" = "The message referred to a chat you are not in.  Maybe it was deleted?";
+"Failed To Fetch Recommended Bots (Title)" = "Failed To Fetch Recommended Bots";
+
+"Please Create a Persona (Title)" = "Please Create a Persona";
+"To start chatting, we need to at least have your nickname" = "To start chatting, we'd like to know your first name";
+"Creating Chat (Progress)" = "Creating";
+"Tap a bot to start chatting with them" = "Tap a bot to start chatting with them";
+
+"You Have %d Personas (Title)" = "You Have %d Personas";
+
+// ThreadHistoryTableViewCell
+
+"No messages yet" = "No messages yet";
+
+// Thread Helper
+
+"New Chat (Subject)" = "New Chat";
+"Failed to create side chat" = "Failed to create side chat";
+
+// BotWidgetView
+
+"Problem with Bot" = "Problem with Bot";
+"Failed to get your private key" = "Failed to get your private key";
+"Failed to get widget HTML" = "Failed to get widget HTML";
+"Loading widget" = "Loading widget";
+
+// FullBotViewController
+
+"You are not in this chat, so no persona is available (Error)" = "You are not in this chat, so no persona is available";
+
+// FullBotWidgetcontroller
+
+"Failed to get widget HTML" = "Failed to get widget HTML";
+
+// BotHelper
+
+"Missing metapage URL" = "Missing metapage URL";
+
+// GroupThreadViewController
+
+"Invite more people?" = "Invite more people?";
+"Share a clickable link to join this chat?" = "Share a clickable link to join this chat.  This link will expire in 24 hours!";
+"Leave chat" = "Leave chat";
+"Forget chat" = "Forget chat";
+"Forget chat?" = "Forget chat?";
+"Forgetting" = "Forgetting";
+"Failed to forget chat" = "Failed to forget chat";
+"You are viewing a local copy of a chat you have already left.  This will delete the local copy of the messages" = "You are viewing a local copy of a chat you have already left.  This will delete the local copy of the messages";
+"Rename chat" = "Rename chat";
+"Changing title (Progress)" = "Changing title";
+"Failed to update title (Title)" = "Failed to update title";
+"Leave chat?" = "Leave chat?";
+"Delete chat" = "Delete chat";
+"Delete chat?" = "Delete chat?";
+"Add popular bot" = "Add popular bot";
+"Add bot by URL" = "Add bot by URL";
+"This deletes the chat for EVERYONE.  It cannot be undone." = "This deletes the chat for EVERYONE.  It cannot be undone.";
+"If you leave, you will need to be invited back" = "If you leave, you will need to be invited back";
+"Add bot to chat" = "Add bot to chat";
+"Creating link" = "Creating link";
+"Failed to create RSVP" = "Failed to create RSVP";
+"I'm planning '%@' and would like you to join the conversation.\n\nClick %@ to learn more.\n\n(This link expires %@)" = "I'm planning '%@' and would like you to join the conversation.\n\nClick %@ to learn more.\n\n(This link expires %@)";
+"Leaving" = "Leaving";
+"Failed to leave chat" = "Failed to leave chat";
+"Deleting" = "Deleting";
+"Deleting Message" = "Deleting Message";
+"Failed to delete chat" = "Failed to delete chat";
+"Flag as inappropriate" = "Flag as inappropriate";
+"Delete message" = "Delete message";
+"Not in chat" = "Not in chat";
+"You are not a member of this chat anymore" = "You are not a member of this chat anymore";
+"Click here to add people" = "Add more people to this conversation";
+"Problem deleting message" = "Problem deleting message";
+"Message Text (Placeholder)" = "Message Text";
+
+"No Camera Available (Alert Title)" = "No Camera Available";
+"This device does not have a camera" = "This device does not have a camera";
+
+"Failed to find your card (Title)" = "Failed to find your persona";
+"Your card was not available" = "Your persona was not available";
+
+"You Have %d Personas In This Chat (Title)" = "You Have %d Personas In This Chat";
+
+// ThreadHelper
+
+"Fetching history" = "Fetching history";
+"Caching history" = "Caching history";
+
+// EditCardViewController
+
+"New Card (Title)" = "New Persona";
+"Create Card (Button)" = "Create";
+"A few words about yourself" = "A few words about yourself";
+"Saving" = "Saving";
+"Saving %d" = "Saving %d%%";
+"Problem saving card" = "Problem saving Persona";
+"Problem updating card" = "Problem updating Persona";
+"Click here to take card picture" = "Tap here to take a selfie";
+
+"No Pictures Allowed (Alert Title)" = "No Pictures Allowed";
+"We cannot allow pictures until your parent signs the consent form" = "We cannot allow pictures until your parent signs the consent form";
+
+"Only One Word Names Allowed (Alert Title)" = "Only One Word Names Allowed";
+"We cannot allow two word names until your parent signs the consent form" = "We cannot allow two word names until your parent signs the consent form";
+
+"Information Practices (Title)" = "Information Practices";
+
+// MyCardListViewController
+
+"My Cards (Title)" = "My Personas";
+"My Cards (Tab)" = "My Personas";
+"Deleting card" = "Deleting Persona";
+"Problem removing card from server" = "Problem removing Persona from server";
+"Loading cards" = "Loading Personas";
+"Problem fetching cards from server" = "Problem fetching Personas from server";
+"Click here to create first card" = "Create your first Persona.\n\nMobido understands that you have many sides to your personality, and lets you create a Persona for each.\n\nEach Mobido Persona is completely separate to respect your privacy.";
+
+"Metapage (Action)" = "Metapage";
+"Metapage URL" = "Metapage URL";
+"Updating Metapage (Progress)" = "Updating Metapage";
+
+"Enter Beta (Action)" = "Enter Beta";
+"Problem Entering Beta (Error)" = "Problem Entering Beta";
+
+"Update Market (Action)" = "Update Market";
+"Update Category" = "Update Category";
+"Market Category (Placeholder)" = "Market Category";
+"Category Value (Placeholder)" = "Category Value";
+"Updating Category (Progress)" = "Updating Category";
+"Problem Updating Category (Error)" = "Problem Updating Category";
+
+"Leave Market (Action)" = "Leave Market";
+"Leave Market?" = "Leave Market?";
+"Leaving Market (Progress)" = "Leaving Market";
+"This removes this persona from all categories in the market" = "This removes this persona from all categories in the market";
+"Problem Leaving Market" = "Problem Leaving Market";
+
+
+// CardHelper
+
+"Fetching your cards" = "Fetching your Personas";
+"Caching your cards" = "Caching your Personas";
+
+// LoginViewController
+
+"Login Failed" = "Login Failed";
+
+// ListLoginsViewController
+
+"Login List (Title)" = "Logins";
+"Loading Logins (Progress)" = "Loading";
+"Problem Loading Logins (Title)" = "Problem Loading Logins";
+"Delete Login? (Title)" = "Delete Login?";
+"Deleting Login (Progress)" = "Deleting Login";
+"Problem Deleting Login (Title)" = "Problem Deleting Login";
+
+"Delete (List Option)" = "Delete";
+"Resend Verification Email (List Option)" = "Resend Verification Email";
+"Resending Verification Email (Progress)" = "Resending Verification Email";
+"Problem Resending Verification (Title)" = "Problem Resending Verification";
+
+"Cannot Delete (Title)" = "Cannot Delete";
+"You must have at least one login" = "You must have at least one login";
+
+"Ready to login" = "Ready to login";
+"Cannot login yet" = "Cannot login yet";
+" - Email verified" = " - Email verified";
+" - Email not verified" = " - Email not verified";
+
+// AddLoginViewController
+
+"Add Login (Title)" = "Add Login";
+"Create (Button)" = "Create";
+"Creating Login (Progress)" = "Creating Login";
+"You will no longer be able to login as %@" = "You will no longer be able to login as %@";
+"Problem Creating Login (Title)" = "Problem Creating Login";
+
+// SignupViewController
+
+"Signing up" = "Signing up";
+"Account Created; Login Failed" = "Account Created; Login Failed";
+"Sign Up Failed" = "Sign Up Failed";
+"Choose a username" = "Choose a username (not your real name)";
+"Children under 13 cannot use an email address to sign up" = "Children under 13 cannot use an email address to sign up";
+"Username (Label)" = "Username";
+
+// BaseLoginViewController
+
+"Signing in" = "Signing in";
+"Invalid Access Key" = "Invalid Access Key";
+"Access key missing id or secret" = "Access key missing id or secret";
+
+// WelcomeViewController
+
+"Welcome" = "Welcome";
+
+// ContentFlaggerViewController
+
+"Flag %@" = "Flag %@";
+"Reporting Issue" = "Reporting Issue";
+"Failed to report issue" = "Failed to report issue";
+
+// ThreadWorkspaceView
+
+"Finding Bots" = "Finding Bots";
+"Problem finding bots" = "Problem finding bots";
+
+"Adding bot (Progress)" = "Adding Bot";
+"Problem adding bot" = "Problem adding bot";
+"Adding coach (Progress)" = "Adding coach";
+"Problem adding coach" = "Problem adding coach";
+"Adding contacts (Progress)" = "Adding friends";
+"Problem adding contacts" = "Problem adding friends";
+
+"About bot" = "About bot";
+
+// DiffieHellman
+
+"DiffieHellman requires mycid" = "DiffieHellman requires mycid";
+"DiffieHellman requires myPrivateKey" = "DiffieHellman requires myPrivateKey";
+"DiffieHellman requires myPrivateKey.id" = "DiffieHellman requires myPrivateKey.id";
+"DiffieHellman failed to find bot key of type %@" = "DiffieHellman failed to find bot key of type %@";
+
+// COPPA
+
+"Print Consent Form" = "Print Consent Form";
+"Scan Consent Help" = "Help";
+"Center the form you just signed in this camera window, and then tap anywhere on the screen to scan it" = "Center the form you just signed in this camera window, and then tap anywhere on the screen to scan it";
+"Uploading (Consent) Form" = "Uploading";
+"Uploading (Consent Form) %d%%" = "Uploading %d%%";
+"Failed to Upload (Consent) Form" = "Failed to Upload Form";
+"(Consent) Done" = "Done";
+"Age Check" = "Age Check";
+
+"Send (Direct Notice)" = "Send";
+"Request (Parent) Permission" = "Request Permission";
+"Sending (Direct) Notice" = "Sending Notice";
+"Sending Notice Failed" = "Sending Notice Failed";
+
+"Please sign this consent form to let %@ use the Mobido app" = "Please sign this consent form to let %@ use the Mobido app";
+"Attached is the Mobido consent form" = "Attached is the Mobido parent consent form.  Please print and sign it, and then scan with the Mobido app.";
+
+"Preparing Form (Progress)" = "Preparing Form";
+"Problem Loading Form (Title)" = "Problem Loading Form";
+
+// Kid list
+
+"Kid List (Tab)" = "Kids";
+"Kid List (Title)" = "Kids";
+"Problem loading children" = "Problem loading children";
+"Finding children" = "Finding children";
+
+"unknown (Birthday)" = "unknown";
+"Your consent (Next Step)" = "Your consent";
+"Create child account (Next Step)" = "Create child account";
+"Manage child (Next Step)" = "Manage child";
+"birthday:%@ next step:%@" = "birthday:%@ next step:%@";
+
+"Verifying Consent (Title)" = "Verifying Consent";
+"Processing consent form" = "Your signed consent form is being processed.  You will be notified when it has been verified.";
+
+"Consent Verified (Title)" = "Consent Form Verified";
+"Consent has been verified. Please create the new account." = "Consent has been verified by our team.  Please create the new account.";
+
+"Create Child Account (Alert Title)" = "Create Child Account";
+"Please help your child create a Mobido account.  Have them download Mobido to their device, and tap 'I'm new here' on the welcome screen" = "Please help your child create a Mobido account.  Have them download Mobido to their device, and tap 'I'm new here' on the welcome screen";
+
+"Deny Consent (Alert Title)" = "Deny Your Consent";
+"This WILL NOT remove your childs account.  This WILL remove potential personal information including all pictures, and disable further pictures.  Continue?" = "This WILL NOT remove your childs account.  This WILL remove potential personal information including all pictures, and disable further pictures.  Continue?";
+"Denying Consent (Progress)" = "Denying Consent";
+"Problem denying consent (Alert Title)" = "Failed to deny consent";
+
+"Delete Relationship? (Title)" = "Delete Relationship?";
+"Remove %@ from your list of kids?  This does NOT delete their account." = "Remove %@ from your list of kids?  This does NOT delete their account.";
+"Removing Parent Relationship (Progress)" = "Removing Parent Relationship";
+"Problem Removing Relationship (Alert Title)" = "Problem Removing Relationship";
+
+// Kid detail
+
+"Switch to Child's Account? (Alert Title)" = "Switch to Kid Account?";
+"Tap OK to sign into your childs account.  You will NOT be able to post new content, but you can delete messages" = "Tap OK to sign into your kids account.  You will NOT be able to post new content, but you can delete messages";
+"Fetching Child Access Key (Progress)" = "Fetching Access Key";
+"Problem Fetching Child Access Key (Alert Title)" = "Problem Fetching Child Access Key (Alert Title)";
+
+"Problem Fetching Child Account Status (Problem Title)" = "Problem Fetching Kid Status";
+
+"Disable Child Account (Button)" = "Disable Account";
+"Enable Child Account (Button)" = "Enable Account";
+"Toggle Child Account (Button)" = "Toggle Account";
+
+"Enable Child Account (Alert Title)" = "Enable Account";
+"Disable Child Account (Alert Title)" = "Disable Account";
+"Allow your child to use the app" = "Allow your child to use the app";
+"Log your child out of Mobido and prevent them from using the app" = "Log your child out of Mobido and prevent them from using the app";
+"Toggling Child Account (Progress)" = "Updating Account";
+"Problem Updating Child Account (Problem Title)" = "Problem Updating Account";
+
+"Wipe Child Account (Alert Title)" = "Wipe Account";
+"This will delete ALL your childs chat messages and cards.  It cannot be undone" = "This will delete ALL your childs chat messages and Personas.  It cannot be undone";
+"Wiping Child Account (Progress)" = "Wiping Account";
+"Problem Wiping Child Account (Problem Title)" = "Problem Wiping Account";
+"Wipe Child Account In Progress (Alert Title)" = "Wipe In-progress";
+"The childs account is being wiped" = "The childs account is being wiped.  This process can take up to 24 hours to clean all the records";
+
+// HttpClient
+
+"HTTP response had no data" = "HTTP response had no data";
+
+// Quickstart view controller
+
+"Quickstart (Title)" = "Quickstart";
+"Problem creating account (Alert Title)" = "Problem creating account";
+"Problem creating quickstart chat (Alert Title)" = "Problem creating new chat";
+"Problem registering APN token (Alert Title)" = "Problem registering for Apple push notifications";
+"Quickstarting (Progress)" = "Starting up!";
+"Morning Chores" = "Morning Chores";
+"Grocery List" = "Grocery List";
+"Failed to find SunriseBot, ShoppingBot, or PayBot" = "Failed to find SunriseBot, ShoppingBot, or PayBot";
+
+"We cannot allow two word names until your account is verified" = "We cannot allow two word names until your account is verified";
+
+// Chat Database
+
+"posted a picture" = "posted a picture";
+
+// Sound settings
+
+"Sound Setting (Title)" = "Sound Setting";
+"Alerts Always On (Theme)" = "Alerts always on";
+"Alerts Mutable (Theme)" = "Alerts mutable";
+
+

@@ -1,0 +1,16 @@
+
+body {
+    font-family: -apple-system, Helvetica Neue;
+    font-size: 17px;
+    margin: 16px;
+}
+
+div.question {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+div.answer {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
